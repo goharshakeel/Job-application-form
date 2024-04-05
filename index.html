@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interview Questionnaire Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form id="interview-form">
+      <h2>Interview Questionnaire Form</h2>
+      <div class="personal-info">
+        <H4>Full Name</H4>
+        <div class="row">
+          <input type="text" id="fname" name="fname" placeholder="Full Name" required>
+          <input type="text" id="mname" name="mname" placeholder="Middle Name">
+          <input type="text" id="lname" name="lname" placeholder="Last Name" required>
+        </div>
+        <h4>Age and Gender</h4>
+        <div class="row">
+          <input type="number" id="age" name="age" placeholder="Age" required>
+          <select id="sex" name="sex">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </div>
+      <h4>Address</h4>
+      <div class="address">
+        <div class="row">
+          <input type="text" id="street" name="street" placeholder="Street Address" required>
+        </div>
+        <div class="row">
+          <input type="text" id="city" name="city" placeholder="City" required>
+          <input type="text" id="state" name="state" placeholder="State/Province" required>
+          <input type="text" id="zip" name="zip" placeholder="Postal/Zip Code" required>
+        </div>
+      </div>
+      <div class="contact-info">
+        <div class="row">
+          <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+      </div>
+      <h2>Questions and Details</h2>
+      <div class="questions">
+        <textarea id="description" name="description" placeholder="Describe yourself in few words" required></textarea>
+        <textarea id="skills" name="skills" placeholder="What are your major skills regarding the job you have applied for?" required></textarea>
+        <textarea id="qualification" name="qualification" placeholder="What is your educational qualification?" required></textarea>
+        <textarea id="reason" name="reason" placeholder="Why did you leave your previous job?" required></textarea>
+        <textarea id="attractive" name="attractive" placeholder="What is the most attractive feature of this job profile?" required></textarea>
+        <textarea id="join" name="join" placeholder="Why do you want to join our organization?" required></textarea>
+        <textarea id="future" name="future" placeholder="Where do you see yourself after a few years in this industry?" required></textarea>
+      </div>
+      <div class="date-submit">
+        <input type="date" id="interview-date" name="interview-date" required>
+        <div class="button"><input type="submit" value="Submit"></div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
